@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body
+            {
+               background-image: url("images/bk.jpg");
+               background-size: cover;
+            }
+            #heading
+            {
+                color:azure;
+                background:pink;
+                border: inset;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            }
+            </style>
+    </head>
+    <body>
+        <div>
+            <form method="post" action="RecieveInput.jsp">
+            <center>
+                <h1 id="heading">ScoreCard Generator</h1>
+                <table border="0" cellspacing="12">
+                    <tr>
+                        <td align="left">
+                           Student Name: 
+                        </td>
+                        <td align="left">
+                            <input type="text" size="25" name="Sname" required title="Enter the Full Name" placeholder="Student Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                           Student RollNumber: 
+                        </td>
+                        <td align="left">
+                            <input type="text" size="25" name="Roll" required placeholder="Roll Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                           Student Address: 
+                        </td>
+                        <td align="left">
+                            <input type="text" size="25" name="Address" required placeholder="Address">
+                        </td>
+                    </tr>
+                </table><br><br>
+                <table>
+                    <tr>
+                        <td>
+                            Subject 
+                        </td>
+                        <td align="center">
+                            Internal(25)
+                        </td>
+                        <td align="center">
+                            External(75)
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>C :</td>
+                        <td><input type="text" size="10" name ="CInternal" required pattern="[0-25]+" title="Enter number less then or Equal to  25"></td>
+                        <td><input type="text" size="10" name="CExternal" required pattern="[0-75]+" title="Enter number less then or Equal to  25"></td>
+                    </tr>
+                    <tr>
+                        <td>C++ :</td>
+                        <td><input type="text" size="10" name ="CPPInternal" required pattern="[0-25]+" title="Enter number less then or Equal to  25"></td>
+                        <td><input type="text" size="10" name="CPPExternal" required pattern="[0-75]+" title="Enter number less then or Equal to  25"></td>
+                    </tr>
+                    <tr>
+                        <td>Java :</td>
+                        <td><input type="text" size="10" name ="JavaInternal" required pattern="[0-25]+" title="Enter number less then or Equal to  25"></td>
+                        <td><input type="text" size="10" name="JavaExternal" required pattern="[0-75]+" title="Enter number less then or Equal to  25"></td>
+                    </tr><tr>
+                        <td>Php :</td>
+                        <td><input type="text" size="10" name ="PhpInternal" required pattern="[0-25]+" title="Enter number less then or Equal to  25"></td>
+                        <td><input type="text" size="10" name="PhpExternal" required pattern="[0-75]+" title="Enter number less then or Equal to  25"></td>
+                    </tr>
+                    <tr>
+                        <td>SQL :</td>
+                        <td><input type="text" size="10" name ="SQLInternal" required pattern="[0-25]+" title="Enter number less then or Equal to  25"></td>
+                        <td><input type="text" size="10" name="SQLExternal" required pattern="[0-75]+" title="Enter number less then or Equal to  25"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3" align="center"><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </center>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body
+            {
+               background-image: url("images/bk.jpg");
+               background-size: cover;
+            }
+            #heading
+            {
+                color:azure;
+                background:pink;
+                border: inset;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            }
+            </style>
+    </head>
+    <body>
+        <div>
+            <center>
+                <form action="DisplayInformation.jsp" method="post">
+                <h1 id="heading">View Details</h1>
+                <table>
+                    <tr>
+                        <td>Enter RollNumber</td>
+                        <td><input type="text" name="Roll" required></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+                </form>
+        </div>
+    </body>
+</html>
